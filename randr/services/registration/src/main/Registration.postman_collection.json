@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "f56fe797-fa4c-4829-b181-eb211ec86d54",
+		"name": "Registration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "3936272"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/registration/all"
+			},
+			"response": []
+		},
+		{
+			"name": "save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"orgName\": \"Save2\",\r\n        \"orgAddress\": \"Save2\",\r\n        \"orgCity\": \"Save2 Address\",\r\n        \"orgState\": \"Tamil Nadu\",\r\n        \"orgPin\": \"600001\",\r\n        \"contactPerson\": \"Save2\",\r\n        \"contactEmail\": \"save2@gmail.com\",\r\n        \"contactPhone\": \"1234567890\",\r\n        \"empCount\": \"12\",\r\n        \"orgIndustry\": \"Software\",\r\n        \"currentStatus\": \"Registered\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/registration/save"
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/registration/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/registration/4"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orgName\": \"UPdated 3 Value\",\r\n    \"orgAddress\": \"updated address\",\r\n    \"orgCity\": \"Save Address\",\r\n    \"orgState\": \"Tamil Nadu\",\r\n    \"orgPin\": \"600001\",\r\n    \"contactPerson\": \"Save\",\r\n    \"contactEmail\": \"save@gmail.com\",\r\n    \"contactPhone\": \"1234567890\",\r\n    \"empCount\": \"10\",\r\n    \"orgIndustry\": \"Software\",\r\n    \"currentStatus\": \"Registered\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/registration/3"
+			},
+			"response": []
+		}
+	]
+}
